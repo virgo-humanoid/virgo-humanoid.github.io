@@ -2,7 +2,7 @@
 
 Static, anonymous project page for **VIRGO: Visuomotor Reference-Guided Humanoid Interaction from Human Demonstrations**.
 
-The site is intended for a GitHub Pages repository named `virgo-humanoid`. Publish from the `main` branch root in **Settings → Pages → Deploy from a branch** after choosing a public address.
+Published at https://virgo-humanoid.github.io/ from the `main` branch root of this repository.
 
 The four image assets come from the VIRGO manuscript figures. The page intentionally omits author names, affiliations, unpublished paper PDF, code links, and unverified performance metrics.
 
