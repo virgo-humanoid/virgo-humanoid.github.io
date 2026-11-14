@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101429">
+  <meta name="description" content="VIRGO is a reference-guided visuomotor framework for diverse humanoid whole-body interaction from human demonstrations.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VIRGO — Visuomotor Humanoid Interaction">
+  <meta property="og:description" content="A shared visuomotor policy guided by human motion references for whole-body humanoid interaction.">
+  <meta property="og:image" content="assets/virgo-teaser.jpg">
+  <title>VIRGO — Visuomotor Reference-Guided Humanoid Interaction</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="wordmark" href="#top" aria-label="VIRGO home"><span class="mark" aria-hidden="true">V</span><span>VIRGO<span class="wordmark-dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#method">Method</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#abstract">Abstract</a>
+      </nav>
+      <a class="header-cta" href="#showcase">Explore the project <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Humanoid whole-body control</p>
+          <h1 id="hero-title">One policy.<br><em>Many ways</em><br>to move.</h1>
+          <p class="hero-lede"><strong>VIRGO</strong> learns from human demonstrations to guide a shared visuomotor policy across object interaction, sitting, and climbing.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#overview">Discover VIRGO <span aria-hidden="true">↘</span></a>
+            <a class="button button-outline" href="#method">See how it works <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="hero-note">Reference-guided · Visuomotor · Sim-to-real</p>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-visual-top"><span>01 / HUMAN TO HUMANOID</span><span>VIRGO PROJECT</span></div>
+          <img src="assets/virgo-teaser.jpg" alt="Sequence of humanoid robot demonstrations showing object interaction, sitting, climbing, and motion reference transfer" fetchpriority="high">
+          <div class="hero-visual-bottom"><span class="live-dot"></span> Diverse whole-body interactions <span class="visual-arrow" aria-hidden="true">↗</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom shell"><span>VISUOMOTOR REFERENCE-GUIDED HUMANOID INTERACTION</span><a href="#overview" aria-label="Scroll to overview">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="intro-section section-pad" id="overview" aria-labelledby="overview-title">
+      <div class="shell intro-grid">
+        <div class="section-label"><span class="section-index">01</span><span>THE IDEA</span></div>
+        <div class="intro-body">
+          <h2 id="overview-title">From human motion to <span class="accent">humanoid interaction.</span></h2>
+          <p>Human demonstrations offer rich examples of how to move, carry, climb, and sit. VIRGO studies how to turn those references into a shared policy that responds to both the desired motion and what the robot sees.</p>
+          <div class="pill-row" aria-label="Project themes"><span>Human demonstrations</span><span>Onboard perception</span><span>One shared policy</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section section-pad" id="method" aria-labelledby="method-title">
+      <div class="shell">
+        <div class="section-heading"><div class="section-label"><span class="section-index">02</span><span>THE APPROACH</span></div><div><p class="kicker">A two-stage route</p><h2 id="method-title">Experts teach.<br><span class="accent">One student learns.</span></h2></div></div>
+        <div class="method-steps">
+          <article class="step"><span class="step-num">01</span><h3>Retarget</h3><p>Human motion becomes a robot reference that preserves the intended whole-body behavior.</p></article>
+          <article class="step"><span class="step-num">02</span><h3>Track</h3><p>State-based reinforcement learning experts follow groups of reference motions in simulation.</p></article>
+          <article class="step"><span class="step-num">03</span><h3>Distill</h3><p>Expert supervision, behavior cloning, and online data collection train one reference-conditioned visuomotor student.</p></article>
+          <article class="step"><span class="step-num">04</span><h3>Execute</h3><p>The student combines visual feedback, proprioception, and MoCap or video-derived references.</p></article>
+        </div>
+        <figure class="figure-card pipeline-card">
+          <div class="figure-topline"><span>FIGURE 01 / SYSTEM OVERVIEW</span><button class="expand-button" type="button" data-lightbox="assets/virgo-pipeline.jpg" data-caption="VIRGO pipeline: retargeting, RL experts, distillation, and deployment" aria-label="Expand VIRGO pipeline figure">Expand <span aria-hidden="true">↗</span></button></div>
+          <img src="assets/virgo-pipeline.jpg" alt="Four-stage VIRGO pipeline: retarget human motion, train RL experts, distill a shared student, deploy with human references" loading="lazy">
+          <figcaption>Human demonstrations are retargeted into robot references; specialized experts provide supervision for one shared policy.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="showcase-section section-pad" id="showcase" aria-labelledby="showcase-title">
+      <div class="shell">
+        <div class="section-heading showcase-heading"><div class="section-label"><span class="section-index">03</span><span>THE SHOWCASE</span></div><div><p class="kicker">Across tasks and settings</p><h2 id="showcase-title">A wider range of<br><span class="accent">whole-body behavior.</span></h2></div></div>
+        <div class="showcase-tabs" role="tablist" aria-label="Showcase view"><button type="button" class="active" role="tab" id="tab-real" aria-controls="panel-real" aria-selected="true" data-panel="real">Real-world sequences <span>↗</span></button><button type="button" role="tab" id="tab-sim" aria-controls="panel-sim" aria-selected="false" tabindex="-1" data-panel="sim">Simulation tasks <span>↗</span></button></div>
+        <div class="showcase-panel" role="tabpanel" id="panel-real" aria-labelledby="tab-real"><div class="showcase-image"><img src="assets/virgo-real-tasks.jpg" alt="Humanoid robot task sequences including carrying objects, pushing a chair, sitting, and climbing" loading="lazy"></div><div class="showcase-description"><span class="overline">REAL ROBOT / TASK FAMILIES</span><h3>Interaction beyond locomotion.</h3><p>Illustrative sequences from the VIRGO manuscript show object handling, chair and box interactions, sitting, and climbing.</p><button class="text-button" type="button" data-lightbox="assets/virgo-real-tasks.jpg" data-caption="VIRGO real-world task sequence montage">View full figure <span aria-hidden="true">↗</span></button></div></div>
+        <div class="showcase-panel" role="tabpanel" id="panel-sim" aria-labelledby="tab-sim" hidden><div class="showcase-image"><img src="assets/virgo-sim-tasks.jpg" alt="Simulated humanoid tasks including object interaction, sitting, and climbing" loading="lazy"></div><div class="showcase-description"><span class="overline">SIMULATION / TASK COVERAGE</span><h3>Many tasks, one learning route.</h3><p>The simulated task set spans object interaction, sitting at different heights, and climbing across different platforms.</p><button class="text-button" type="button" data-lightbox="assets/virgo-sim-tasks.jpg" data-caption="VIRGO simulation task montage">View full figure <span aria-hidden="true">↗</span></button></div></div>
+      </div>
+    </section>
+
+    <section class="abstract-section section-pad" id="abstract" aria-labelledby="abstract-title"><div class="shell abstract-grid"><div class="section-label"><span class="section-index">04</span><span>THE RESEARCH</span></div><div><p class="kicker">Project summary</p><h2 id="abstract-title">About VIRGO</h2><p>VIRGO explores a visual sim-to-real route for learning diverse humanoid skills from human demonstrations. It first trains reference-tracking reinforcement learning experts in simulation, then distills their behavior into a shared, reference-conditioned visuomotor policy.</p><p>At deployment, a MoCap or video-derived reference specifies the desired behavior while visual and proprioceptive observations help the robot respond to its surroundings. The project studies object interaction, sitting, and climbing as a unified whole-body control problem.</p><div class="resource-status"><span class="status-icon" aria-hidden="true">↗</span><div><strong>Research materials</strong><span>Paper, video, and code links will be added when released.</span></div></div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-main"><div><a class="footer-wordmark" href="#top">VIRGO<span>.</span></a><p>Human motion, humanoid possibility.</p></div><a class="back-top" href="#top">Back to top <span aria-hidden="true">↑</span></a></div><div class="shell footer-bottom"><span>VIRGO PROJECT</span><span>Anonymous research project page</span><span>© <span id="year">2026</span> VIRGO</span></div></footer>
+
+  <dialog class="lightbox" aria-label="Expanded research figure"><button class="lightbox-close" type="button" aria-label="Close expanded image">×</button><img alt=""><p></p></dialog>
+</body>
+</html>
