@@ -1,9 +1,9 @@
 # VIRGO project website
 
-Static, anonymous project page for **VIRGO: Visuomotor Reference-Guided Humanoid Interaction from Human Demonstrations**.
+Static, anonymous project page for **VIRGO: A Visuomotor Reference-Conditioned Generalist for Whole-Body Humanoid Interaction**.
 
 Published at https://virgo-humanoid.github.io/ from the `main` branch root of this repository.
 
-The four image assets come from the VIRGO manuscript figures. The page intentionally omits author names, affiliations, unpublished paper PDF, code links, and unverified performance metrics.
+The site uses figures from the latest anonymized main paper and supplementary material, along with a web-encoded supplementary film and selected real-world clips. The reported held-out Progress values match the current manuscript. The unpublished paper PDF, author identities, and affiliations are not distributed here.
 
 To preview locally, run `python3 -m http.server 8000` in this directory and open `http://localhost:8000/`.
