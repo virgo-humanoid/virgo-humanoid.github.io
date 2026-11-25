@@ -12,26 +12,17 @@ nav?.querySelectorAll('a').forEach(link => link.addEventListener('click', () => 
   menuButton.setAttribute('aria-label', 'Open navigation');
 }));
 
-const tabs = [...document.querySelectorAll('.showcase-tabs [role="tab"]')];
-function activateTab(tab) {
-  tabs.forEach(item => {
-    const active = item === tab;
-    item.classList.toggle('active', active);
-    item.setAttribute('aria-selected', String(active));
-    item.tabIndex = active ? 0 : -1;
-    document.querySelector(`#panel-${item.dataset.panel}`).hidden = !active;
-  });
+const demoVideos = document.querySelectorAll('.demo-video');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+if ('IntersectionObserver' in window) {
+  const videoObserver = new IntersectionObserver(entries => {
+    entries.forEach(({ target: video, isIntersecting }) => {
+      if (isIntersecting && !reduceMotion.matches) video.play().catch(() => {});
+      else video.pause();
+    });
+  }, { rootMargin: '100px 0px', threshold: 0.3 });
+  demoVideos.forEach(video => videoObserver.observe(video));
 }
-tabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => activateTab(tab));
-  tab.addEventListener('keydown', event => {
-    if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
-    event.preventDefault();
-    const next = tabs[(index + (event.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
-    activateTab(next);
-    next.focus();
-  });
-});
 
 const lightbox = document.querySelector('.lightbox');
 const lightboxImage = lightbox?.querySelector('img');

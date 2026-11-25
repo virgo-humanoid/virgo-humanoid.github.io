@@ -11,8 +11,8 @@
   <meta property="og:image" content="https://virgo-humanoid.github.io/assets/virgo-teaser.jpg">
   <title>VIRGO — A Visuomotor Reference-Conditioned Generalist for Whole-Body Humanoid Interaction</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=5">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=6">
+  <script src="script.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,8 +24,8 @@
         <a href="#film">Video</a>
         <a href="#overview">Overview</a>
         <a href="#method">Method</a>
+        <a href="#showcase">References</a>
         <a href="#results">Results</a>
-        <a href="#showcase">Showcase</a>
         <a href="#abstract">Abstract</a>
       </nav>
       <a class="header-cta" href="#film">Watch video</a>
@@ -68,12 +68,12 @@
           </video>
           <div class="video-caption"><span>FULL VIDEO · 3 MIN</span><span>Human references · Robot execution</span></div>
         </div>
-        <div class="clip-heading"><h3>Real-world sequences</h3></div>
-        <div class="clip-grid">
-          <article class="clip-card"><video controls playsinline preload="none" poster="assets/video/carry-box-poster.jpg" aria-label="Robot carrying a box"><source src="assets/video/carry-box.mp4" type="video/mp4"></video><div><span>OBJECT INTERACTION</span><h4>Carry a box</h4></div></article>
-          <article class="clip-card"><video controls playsinline preload="none" poster="assets/video/push-chair-poster.jpg" aria-label="Robot pushing a chair"><source src="assets/video/push-chair.mp4" type="video/mp4"></video><div><span>OBJECT INTERACTION</span><h4>Push a chair</h4></div></article>
-          <article class="clip-card"><video controls playsinline preload="none" poster="assets/video/sit-chair-poster.jpg" aria-label="Robot sitting on a chair"><source src="assets/video/sit-chair.mp4" type="video/mp4"></video><div><span>SUPPORT TRANSITION</span><h4>Sit on a chair</h4></div></article>
-          <article class="clip-card"><video controls playsinline preload="none" poster="assets/video/climb-platform-poster.jpg" aria-label="Robot climbing an outdoor platform"><source src="assets/video/climb-platform.mp4" type="video/mp4"></video><div><span>SUPPORT TRANSITION</span><h4>Climb a platform</h4></div></article>
+        <div class="demo-list-heading"><h3>Real-world sequences</h3><p>Four interactions, shown one at a time.</p></div>
+        <div class="demo-stack real-demo-stack">
+          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-carry-box-poster.jpg" aria-label="Unitree G1 carrying a box"><source src="assets/video/real-carry-box.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Carry a box</h4><p>Carry a medium box while moving across the room.</p></div></article>
+          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-push-chair-poster.jpg" aria-label="Unitree G1 pushing a chair"><source src="assets/video/real-push-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Push a chair</h4><p>Maintain contact while moving an office chair.</p></div></article>
+          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-chair-poster.jpg" aria-label="Unitree G1 sitting on a chair"><source src="assets/video/real-sit-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Sit on a chair</h4><p>Move from standing into a seated pose.</p></div></article>
+          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-platform-poster.jpg" aria-label="Unitree G1 climbing onto an outdoor platform"><source src="assets/video/real-climb-platform.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Climb a platform</h4><p>Step onto a raised platform outdoors.</p></div></article>
         </div>
       </div>
     </section>
@@ -110,31 +110,35 @@
       </div>
     </section>
 
+    <section class="showcase-section section-pad" id="showcase" aria-labelledby="showcase-title">
+      <div class="shell">
+        <div class="section-heading"><div class="section-label"><span class="section-index">04</span><span>FROM REFERENCE TO ROBOT</span></div><div><p class="kicker">Motion and perception</p><h2 id="showcase-title">The reference guides.<br><span class="accent">Vision keeps up.</span></h2></div></div>
+        <div class="story-grid">
+          <article class="story-card"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/story-video-to-robot-poster.jpg" aria-label="Human video, extracted motion, and robot execution for carrying a box"><source src="assets/video/story-video-to-robot.mp4" type="video/mp4"></video></div><div class="story-copy"><span>HUMAN VIDEO TO ROBOT</span><h3>From video to action</h3><p>Human video, extracted motion, and robot execution side by side.</p></div></article>
+          <article class="story-card"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/story-onboard-vision-poster.jpg" aria-label="Robot carrying a box alongside onboard RGB and segmented point cloud"><source src="assets/video/story-onboard-vision.mp4" type="video/mp4"></video></div><div class="story-copy"><span>ONBOARD PERCEPTION</span><h3>See while moving</h3><p>Real-world action beside onboard RGB and segmented point cloud.</p></div></article>
+        </div>
+      </div>
+    </section>
+
     <section class="results-section section-pad" id="results" aria-labelledby="results-title">
       <div class="shell">
-        <div class="section-heading"><div class="section-label"><span class="section-index">04</span><span>THE RESULTS</span></div><div><p class="kicker">Held-out references in simulation</p><h2 id="results-title">One policy across<br><span class="accent">three task families.</span></h2><p class="section-intro">Mean trajectory progress before failure on held-out tasks.</p></div></div>
+        <div class="section-heading"><div class="section-label"><span class="section-index">05</span><span>THE RESULTS</span></div><div><p class="kicker">Held-out references in simulation</p><h2 id="results-title">One policy across<br><span class="accent">three task families.</span></h2><p class="section-intro">Mean trajectory progress before failure on held-out tasks.</p></div></div>
         <div class="result-grid" aria-label="Held-out trajectory progress">
           <div class="result-card"><span>OBJECT INTERACTION</span><strong>0.828</strong></div>
           <div class="result-card"><span>CLIMBING</span><strong>0.631</strong></div>
           <div class="result-card"><span>SITTING</span><strong>0.557</strong></div>
         </div>
         <p class="results-note">VIRGO leads the evaluated deployable methods on progress; object-pose error is higher than some baselines.</p>
-        <div class="results-figures">
-          <figure class="figure-card"><div class="figure-topline"><span>UNSEEN CHAIR REFERENCE</span><button class="expand-button" type="button" data-lightbox="assets/virgo-sim-comparison.jpg" data-caption="Qualitative comparison on an unseen lift-chair reference" aria-label="Expand comparison figure">Expand figure</button></div><img src="assets/virgo-sim-comparison.jpg" alt="Four simulation methods on an unseen chair interaction; VIRGO maintains a stable hold" loading="lazy"><figcaption>Comparison on an unseen chair reference.</figcaption></figure>
-          <figure class="figure-card"><div class="figure-topline"><span>VISUAL RECOVERY</span><button class="expand-button" type="button" data-lightbox="assets/virgo-recovery.jpg" data-caption="Visual feedback supports recovery after an object disturbance" aria-label="Expand recovery figure">Expand figure</button></div><img src="assets/virgo-recovery.jpg" alt="VIRGO corrects after an object disturbance while the no-vision ablation drifts" loading="lazy"><figcaption>Vision helps recover after a disturbance.</figcaption></figure>
+        <div class="demo-list-heading results-demo-heading"><h3>Simulation in motion</h3><p>Examples across the three task families.</p></div>
+        <div class="demo-stack sim-demo-stack">
+          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/sim-object-interaction-poster.jpg" aria-label="Simulation rollouts for six object interactions"><source src="assets/video/sim-object-interaction.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SIMULATION</span><h4>Object interaction</h4><p>Carrying, lifting, and pushing across different objects.</p></div></article>
+          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/sim-sitting-poster.jpg" aria-label="Simulation rollouts for six sitting motions"><source src="assets/video/sim-sitting.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SIMULATION</span><h4>Sitting</h4><p>Different seats and sit-to-stand motions.</p></div></article>
+          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/sim-climbing-poster.jpg" aria-label="Simulation rollouts for six climbing motions"><source src="assets/video/sim-climbing.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SIMULATION</span><h4>Climbing</h4><p>Steps, boxes, and platforms with varied geometry.</p></div></article>
         </div>
-      </div>
-    </section>
-
-    <section class="showcase-section section-pad" id="showcase" aria-labelledby="showcase-title">
-      <div class="shell">
-        <div class="section-heading showcase-heading"><div class="section-label"><span class="section-index">05</span><span>THE SHOWCASE</span></div><div><p class="kicker">Unitree G1</p><h2 id="showcase-title">A wider range of<br><span class="accent">whole-body behavior.</span></h2></div></div>
-        <div class="showcase-tabs" role="tablist" aria-label="Showcase view"><button type="button" class="active" role="tab" id="tab-real" aria-controls="panel-real" aria-selected="true" data-panel="real">Real-world sequences</button><button type="button" role="tab" id="tab-sim" aria-controls="panel-sim" aria-selected="false" tabindex="-1" data-panel="sim">Simulation tasks</button></div>
-        <div class="showcase-panel" role="tabpanel" id="panel-real" aria-labelledby="tab-real"><div class="showcase-image"><img src="assets/virgo-real-tasks.jpg" alt="Unitree G1 carrying, pushing, lifting, sitting, and climbing in hardware experiments" loading="lazy"></div><div class="showcase-description"><span class="overline">REAL ROBOT / ONE FROZEN POLICY</span><h3>Interaction beyond locomotion.</h3><p>Carry, push, lift, sit, and climb.</p><button class="text-button" type="button" data-lightbox="assets/virgo-real-tasks.jpg" data-caption="VIRGO multi-task hardware execution">View full figure</button></div></div>
-        <div class="showcase-panel" role="tabpanel" id="panel-sim" aria-labelledby="tab-sim" hidden><div class="showcase-image"><img src="assets/virgo-sim-tasks.jpg" alt="Isaac Sim tasks spanning objects, stools, steps, and platforms" loading="lazy"></div><div class="showcase-description"><span class="overline">SIMULATION / TASK COVERAGE</span><h3>Many tasks, one learning route.</h3><p>Objects, stools, steps, and platforms.</p><button class="text-button" type="button" data-lightbox="assets/virgo-sim-tasks.jpg" data-caption="VIRGO simulation task suite">View full figure</button></div></div>
-        <div class="transfer-figures">
-          <figure class="figure-card"><div class="figure-topline"><span>HUMAN VIDEO TO ROBOT</span><button class="expand-button" type="button" data-lightbox="assets/virgo-video-reference.jpg" data-caption="Human videos, extracted motion, and G1 execution for box and trash-can carrying" aria-label="Expand video-reference figure">Expand figure</button></div><img src="assets/virgo-video-reference.jpg" alt="Human video, extracted motion, and robot execution for carrying a box and a trash can" loading="lazy"><figcaption>Human video guides robot execution.</figcaption></figure>
-          <figure class="figure-card"><div class="figure-topline"><span>HARDWARE GENERALIZATION</span><button class="expand-button" type="button" data-lightbox="assets/virgo-generalization.jpg" data-caption="Same frozen policy with different objects and initial robot poses" aria-label="Expand generalization figure">Expand figure</button></div><img src="assets/virgo-generalization.jpg" alt="Same frozen robot policy with changed object geometry and starting position" loading="lazy"><figcaption>One policy, different objects and starts.</figcaption></figure>
+        <div class="demo-list-heading comparison-heading"><h3>Comparisons</h3><p>Controllers and visual feedback in motion.</p></div>
+        <div class="comparison-grid">
+          <article class="comparison-card"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/comparison-controllers-poster.jpg" aria-label="Dynamic comparison of controllers on a chair interaction"><source src="assets/video/comparison-controllers.mp4" type="video/mp4"></video></div><h4>Controller comparison</h4><p>Side-by-side behavior on a chair interaction.</p></article>
+          <article class="comparison-card"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/comparison-recovery-poster.jpg" aria-label="Dynamic comparison of recovery with and without vision"><source src="assets/video/comparison-recovery.mp4" type="video/mp4"></video></div><h4>Visual recovery</h4><p>Vision helps correct after an object disturbance.</p></article>
         </div>
       </div>
     </section>
