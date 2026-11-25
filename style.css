@@ -103,3 +103,6 @@ html{scroll-behavior:auto;scroll-padding-top:76px}
 .overview-teaser{margin-top:46px}
 .overview-teaser img{width:100%;height:auto;border-radius:14px;box-shadow:0 16px 48px rgba(25,22,45,.14)}
 @media(max-width:850px){html{scroll-padding-top:66px}}
+.overview-teaser figcaption{max-width:1050px;margin:18px auto 0;color:#596071;font-size:15px;line-height:1.65}
+.real-world-section .demo-list-heading{margin-top:18px}
+.real-world-section .demo-list-heading h2{font-family:var(--display);font-size:clamp(42px,5vw,70px);font-weight:600;letter-spacing:-.055em;line-height:1.1;margin:0}

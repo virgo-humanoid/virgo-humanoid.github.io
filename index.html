@@ -11,7 +11,7 @@
   <meta property="og:image" content="https://virgo-humanoid.github.io/assets/virgo-teaser.jpg">
   <title>VIRGO — A Visuomotor Reference-Conditioned Generalist for Whole-Body Humanoid Interaction</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=9">
   <script src="script.js?v=2" defer></script>
 </head>
 <body>
@@ -23,10 +23,11 @@
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="#film">Video</a>
         <a href="#overview">Overview</a>
+        <a href="#abstract">Abstract</a>
         <a href="#method">Method</a>
+        <a href="#real-world">Real demos</a>
         <a href="#showcase">References</a>
         <a href="#results">Results</a>
-        <a href="#abstract">Abstract</a>
       </nav>
       <a class="header-cta" href="#film">Watch video</a>
     </div>
@@ -64,20 +65,6 @@
           </video>
           <div class="video-caption"><span>FULL VIDEO · 3 MIN</span><span>Human references · Robot execution</span></div>
         </div>
-        <div class="demo-list-heading"><h3>Real-world sequences</h3><p>Carrying, pushing, sitting, and climbing.</p></div>
-        <div class="demo-stack real-demo-stack">
-          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-carry-box-poster.jpg" aria-label="Unitree G1 carrying a box"><source src="assets/video/real-carry-box.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Carry a box</h4><p>Carry a medium box while moving across the room.</p></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-carry-trashcan-a-poster.jpg" aria-label="Carry a trashcan"><source src="assets/video/real-carry-trashcan-a.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Carry a trashcan</h4></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-push-chair-poster.jpg" aria-label="Unitree G1 pushing a chair"><source src="assets/video/real-push-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Push a chair</h4><p>Maintain contact while moving an office chair.</p></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-push-suitcase-side-poster.jpg" aria-label="Push a suitcase"><source src="assets/video/real-push-suitcase-side.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Push a suitcase</h4></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-chair-poster.jpg" aria-label="Unitree G1 sitting on a chair"><source src="assets/video/real-sit-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Sit on a chair</h4><p>Move from standing into a seated pose.</p></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-on-chair-b-poster.jpg" aria-label="Sit on another chair"><source src="assets/video/real-sit-on-chair-b.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SITTING</span><h4>Sit on another chair</h4></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-on-box-poster.jpg" aria-label="Sit on a box"><source src="assets/video/real-sit-on-box.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SITTING</span><h4>Sit on a box</h4></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-platform-poster.jpg" aria-label="Unitree G1 climbing onto an outdoor platform"><source src="assets/video/real-climb-platform.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Climb a platform</h4><p>Step onto a raised platform outdoors.</p></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-step-up-outdoor-poster.jpg" aria-label="Step up outdoors"><source src="assets/video/real-step-up-outdoor.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>CLIMBING</span><h4>Step up outdoors</h4></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-ramp-poster.jpg" aria-label="Climb a ramp"><source src="assets/video/real-climb-ramp.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>CLIMBING</span><h4>Climb a ramp</h4></div></article>
-<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-ramp-outdoor-poster.jpg" aria-label="Climb an outdoor ramp"><source src="assets/video/real-climb-ramp-outdoor.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>CLIMBING</span><h4>Climb an outdoor ramp</h4></div></article>
-        </div>
       </div>
     </section>
 
@@ -90,12 +77,21 @@
           <div class="pill-row" aria-label="Project themes"><span>Object interaction</span><span>Sitting</span><span>Climbing</span><span>One frozen policy</span></div>
         </div>
       </div>
-      <div class="shell overview-teaser"><img src="assets/virgo-teaser.jpg" alt="VIRGO paper teaser showing object interaction, sitting, climbing, and human reference transfer" loading="lazy" width="2200" height="678"></div>
+      <figure class="shell overview-teaser"><img src="assets/virgo-teaser.jpg" alt="VIRGO paper teaser showing object interaction, sitting, climbing, and human reference transfer" loading="lazy" width="2200" height="678"><figcaption>VIRGO enables a single visuomotor policy to perform diverse whole-body interactions, transferring zero-shot from simulation: object interaction, sitting, and climbing. The policy follows references from monocular human video or human MoCap, with corresponding robot executions.</figcaption></figure>
+    </section>
+
+    <section class="abstract-section section-pad" id="abstract" aria-labelledby="abstract-title">
+      <div class="shell abstract-grid">
+        <div class="section-label"><span class="section-index">03</span><span>THE RESEARCH</span></div>
+        <div><p class="kicker">Paper abstract</p><h2 id="abstract-title">Abstract</h2>
+          <p>A key open challenge in humanoid robotics is learning a single policy that autonomously performs diverse whole-body interactions using onboard perception. Existing motion trackers often lack visual feedback, whereas perceptive policies typically specialize in individual task families. Contact-rich robot data remains costly to collect. We introduce VIRGO, a visual sim-to-real framework that learns diverse interactions from human demonstrations without teleoperated robot training data. Our approach trains state-based Reinforcement Learning (RL) experts on retargeted motion-capture (MoCap) trajectories and distills them into one reference-conditioned visuomotor diffusion policy through mixed Behavior Cloning (BC) and online DAgger. The resulting policy follows MoCap or video-derived references, using egocentric visual feedback to maintain the intended interaction in a closed loop. Experiments span moving-object interaction, climbing, and sitting, with a mean trajectory completion ratio of 0.828 on held-out object-interaction references, outperforming the evaluated deployable baselines. The same frozen policy transfers zero-shot to a Unitree G1 across human references and scene variations, without task-specific fine-tuning.</p>
+        </div>
+      </div>
     </section>
 
     <section class="method-section section-pad" id="method" aria-labelledby="method-title">
       <div class="shell">
-        <div class="section-heading"><div class="section-label"><span class="section-index">03</span><span>THE APPROACH</span></div><div><p class="kicker">Expert to generalist</p><h2 id="method-title">Experts teach.<br><span class="accent">One student learns.</span></h2></div></div>
+        <div class="section-heading"><div class="section-label"><span class="section-index">04</span><span>THE APPROACH</span></div><div><p class="kicker">Expert to generalist</p><h2 id="method-title">Experts teach.<br><span class="accent">One student learns.</span></h2></div></div>
         <div class="method-steps">
           <article class="step"><span class="step-num">01</span><h3>Retarget</h3><p>Turn human motion into robot references.</p></article>
           <article class="step"><span class="step-num">02</span><h3>Track</h3><p>Train RL experts in simulation.</p></article>
@@ -114,9 +110,29 @@
       </div>
     </section>
 
+    <section class="film-section section-pad real-world-section" id="real-world" aria-labelledby="real-world-title">
+      <div class="shell">
+        <div class="section-label"><span class="section-index">05</span><span>REAL-WORLD DEMOS</span></div>
+        <div class="demo-list-heading"><h2 id="real-world-title">Real-world sequences</h2><p>Carrying, pushing, sitting, and climbing.</p></div>
+        <div class="demo-stack real-demo-stack">
+          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-carry-box-poster.jpg" aria-label="Unitree G1 carrying a box"><source src="assets/video/real-carry-box.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Carry a box</h4><p>Carry a medium box while moving across the room.</p></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-carry-trashcan-a-poster.jpg" aria-label="Carry a trashcan"><source src="assets/video/real-carry-trashcan-a.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Carry a trashcan</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-push-chair-poster.jpg" aria-label="Unitree G1 pushing a chair"><source src="assets/video/real-push-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Push a chair</h4><p>Maintain contact while moving an office chair.</p></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-push-suitcase-side-poster.jpg" aria-label="Push a suitcase"><source src="assets/video/real-push-suitcase-side.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Push a suitcase</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-chair-poster.jpg" aria-label="Unitree G1 sitting on a chair"><source src="assets/video/real-sit-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Sit on a chair</h4><p>Move from standing into a seated pose.</p></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-on-chair-b-poster.jpg" aria-label="Sit on another chair"><source src="assets/video/real-sit-on-chair-b.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SITTING</span><h4>Sit on another chair</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-on-box-poster.jpg" aria-label="Sit on a box"><source src="assets/video/real-sit-on-box.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SITTING</span><h4>Sit on a box</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-platform-poster.jpg" aria-label="Unitree G1 climbing onto an outdoor platform"><source src="assets/video/real-climb-platform.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Climb a platform</h4><p>Step onto a raised platform outdoors.</p></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-step-up-outdoor-poster.jpg" aria-label="Step up outdoors"><source src="assets/video/real-step-up-outdoor.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>CLIMBING</span><h4>Step up outdoors</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-ramp-poster.jpg" aria-label="Climb a ramp"><source src="assets/video/real-climb-ramp.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>CLIMBING</span><h4>Climb a ramp</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-ramp-outdoor-poster.jpg" aria-label="Climb an outdoor ramp"><source src="assets/video/real-climb-ramp-outdoor.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>CLIMBING</span><h4>Climb an outdoor ramp</h4></div></article>
+        </div>
+      </div>
+    </section>
+
     <section class="showcase-section section-pad" id="showcase" aria-labelledby="showcase-title">
       <div class="shell">
-        <div class="section-heading"><div class="section-label"><span class="section-index">04</span><span>FROM REFERENCE TO ROBOT</span></div><div><p class="kicker">Motion and perception</p><h2 id="showcase-title">The reference guides.<br><span class="accent">Vision keeps up.</span></h2></div></div>
+        <div class="section-heading"><div class="section-label"><span class="section-index">06</span><span>FROM REFERENCE TO ROBOT</span></div><div><p class="kicker">Motion and perception</p><h2 id="showcase-title">The reference guides.<br><span class="accent">Vision keeps up.</span></h2></div></div>
         <div class="story-grid">
           <article class="story-card"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/story-video-to-robot-poster.jpg" aria-label="Human video, extracted motion, and robot execution for carrying a box"><source src="assets/video/story-video-to-robot.mp4" type="video/mp4"></video></div><div class="story-copy"><span>HUMAN VIDEO TO ROBOT</span><h3>From video to action</h3><p>Human video, extracted motion, and robot execution side by side.</p></div></article>
           <article class="story-card"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/story-onboard-vision-poster.jpg" aria-label="Robot carrying a box alongside onboard RGB and segmented point cloud"><source src="assets/video/story-onboard-vision.mp4" type="video/mp4"></video></div><div class="story-copy"><span>ONBOARD PERCEPTION</span><h3>See while moving</h3><p>Real-world action beside onboard RGB and segmented point cloud.</p></div></article>
@@ -126,7 +142,7 @@
 
     <section class="results-section section-pad" id="results" aria-labelledby="results-title">
       <div class="shell">
-        <div class="section-heading"><div class="section-label"><span class="section-index">05</span><span>THE RESULTS</span></div><div><p class="kicker">Held-out references in simulation</p><h2 id="results-title">One policy across<br><span class="accent">three task families.</span></h2><p class="section-intro">Mean trajectory progress before failure on held-out tasks.</p></div></div>
+        <div class="section-heading"><div class="section-label"><span class="section-index">07</span><span>THE RESULTS</span></div><div><p class="kicker">Held-out references in simulation</p><h2 id="results-title">One policy across<br><span class="accent">three task families.</span></h2><p class="section-intro">Mean trajectory progress before failure on held-out tasks.</p></div></div>
         <div class="result-grid" aria-label="Held-out trajectory progress">
           <div class="result-card"><span>OBJECT INTERACTION</span><strong>0.828</strong></div>
           <div class="result-card"><span>CLIMBING</span><strong>0.631</strong></div>
@@ -143,15 +159,6 @@
         <div class="comparison-grid">
           <article class="comparison-card"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/comparison-controllers-poster.jpg" aria-label="Dynamic comparison of controllers on a chair interaction"><source src="assets/video/comparison-controllers.mp4" type="video/mp4"></video></div><h4>Controller comparison</h4><p>Side-by-side behavior on a chair interaction.</p></article>
           <article class="comparison-card"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/comparison-recovery-poster.jpg" aria-label="Dynamic comparison of recovery with and without vision"><source src="assets/video/comparison-recovery.mp4" type="video/mp4"></video></div><h4>Visual recovery</h4><p>Vision helps correct after an object disturbance.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="abstract-section section-pad" id="abstract" aria-labelledby="abstract-title">
-      <div class="shell abstract-grid">
-        <div class="section-label"><span class="section-index">06</span><span>THE RESEARCH</span></div>
-        <div><p class="kicker">Paper abstract</p><h2 id="abstract-title">Abstract</h2>
-          <p>A key open challenge in humanoid robotics is learning a single policy that autonomously performs diverse whole-body interactions using onboard perception. Existing motion trackers often lack visual feedback, whereas perceptive policies typically specialize in individual task families. Contact-rich robot data remains costly to collect. We introduce VIRGO, a visual sim-to-real framework that learns diverse interactions from human demonstrations without teleoperated robot training data. Our approach trains state-based Reinforcement Learning (RL) experts on retargeted motion-capture (MoCap) trajectories and distills them into one reference-conditioned visuomotor diffusion policy through mixed Behavior Cloning (BC) and online DAgger. The resulting policy follows MoCap or video-derived references, using egocentric visual feedback to maintain the intended interaction in a closed loop. Experiments span moving-object interaction, climbing, and sitting, with a mean trajectory completion ratio of 0.828 on held-out object-interaction references, outperforming the evaluated deployable baselines. The same frozen policy transfers zero-shot to a Unitree G1 across human references and scene variations, without task-specific fine-tuning.</p>
         </div>
       </div>
     </section>
