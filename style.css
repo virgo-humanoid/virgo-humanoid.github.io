@@ -52,3 +52,9 @@
 .hero-affiliations{display:flex;flex-wrap:wrap;column-gap:21px;row-gap:3px;margin:0 0 27px;color:#b9bdd2;font-size:13px;line-height:1.7}
 .hero-affiliations sup{margin:0 6px 0 0}
 @media(max-width:720px){.hero-authors{font-size:14px;gap:3px}.hero-author-line{column-gap:12px}.hero-affiliations{font-size:12px;column-gap:14px;margin-bottom:23px}}
+
+/* Put the video close to the opening screen */
+.film-section{padding-top:58px}
+.film-section .section-heading{margin-bottom:30px}
+.film-section .section-heading h2{font-size:clamp(32px,3.2vw,45px);line-height:1.1}
+@media(max-width:720px){.film-section{padding-top:48px}.film-section .section-heading{margin-bottom:26px}}
