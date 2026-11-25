@@ -1,6 +1,6 @@
 # VIRGO project website
 
-Project page for **VIRGO: A Visuomotor Reference-Conditioned Generalist for Whole-Body Humanoid Interaction**.
+Project page for **VIRGO: A Visuomotor Generalist for Whole-Body Humanoid Interaction**.
 
 Published at https://virgo-humanoid.github.io/ from the `main` branch.
 
