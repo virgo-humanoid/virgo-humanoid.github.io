@@ -11,7 +11,7 @@
   <meta property="og:image" content="https://virgo-humanoid.github.io/assets/virgo-teaser.jpg">
   <title>VIRGO — A Visuomotor Reference-Conditioned Generalist for Whole-Body Humanoid Interaction</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
   <script src="script.js?v=2" defer></script>
 </head>
 <body>
@@ -34,7 +34,7 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-glow" aria-hidden="true"></div>
+      <video class="demo-video hero-background" autoplay muted loop playsinline preload="auto" poster="assets/video/teaser-poster.jpg" aria-hidden="true"><source src="assets/video/teaser-one-policy.mp4" type="video/mp4"></video><div class="hero-shade" aria-hidden="true"></div>
       <div class="shell hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-line"></span> Humanoid whole-body interaction</p>
@@ -50,11 +50,7 @@
             <a class="button button-outline" href="#method">Explore the method</a>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-visual-top"><span>HUMAN TO HUMANOID</span><span>VIRGO PROJECT</span></div>
-          <img src="assets/virgo-teaser.jpg" alt="VIRGO robot carrying objects, sitting, climbing, and following human video and MoCap references" fetchpriority="high" width="2200" height="678">
-          <div class="hero-visual-bottom"><span class="live-dot" aria-hidden="true"></span><span>One policy across whole-body interactions</span></div>
-        </div>
+
       </div>
     </section>
 
@@ -71,9 +67,17 @@
         <div class="demo-list-heading"><h3>Real-world sequences</h3><p>Four interactions, shown one at a time.</p></div>
         <div class="demo-stack real-demo-stack">
           <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-carry-box-poster.jpg" aria-label="Unitree G1 carrying a box"><source src="assets/video/real-carry-box.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Carry a box</h4><p>Carry a medium box while moving across the room.</p></div></article>
-          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-push-chair-poster.jpg" aria-label="Unitree G1 pushing a chair"><source src="assets/video/real-push-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Push a chair</h4><p>Maintain contact while moving an office chair.</p></div></article>
-          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-chair-poster.jpg" aria-label="Unitree G1 sitting on a chair"><source src="assets/video/real-sit-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Sit on a chair</h4><p>Move from standing into a seated pose.</p></div></article>
-          <article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-platform-poster.jpg" aria-label="Unitree G1 climbing onto an outdoor platform"><source src="assets/video/real-climb-platform.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Climb a platform</h4><p>Step onto a raised platform outdoors.</p></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-carry-small-box-a-poster.jpg" aria-label="Carry a small box"><source src="assets/video/real-carry-small-box-a.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Carry a small box</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-carry-trashcan-a-poster.jpg" aria-label="Carry a trashcan"><source src="assets/video/real-carry-trashcan-a.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Carry a trashcan</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-push-chair-poster.jpg" aria-label="Unitree G1 pushing a chair"><source src="assets/video/real-push-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Push a chair</h4><p>Maintain contact while moving an office chair.</p></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-push-suitcase-side-poster.jpg" aria-label="Push a suitcase"><source src="assets/video/real-push-suitcase-side.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>OBJECT INTERACTION</span><h4>Push a suitcase</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-chair-poster.jpg" aria-label="Unitree G1 sitting on a chair"><source src="assets/video/real-sit-chair.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Sit on a chair</h4><p>Move from standing into a seated pose.</p></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-on-chair-b-poster.jpg" aria-label="Sit on another chair"><source src="assets/video/real-sit-on-chair-b.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SITTING</span><h4>Sit on another chair</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-sit-on-box-poster.jpg" aria-label="Sit on a box"><source src="assets/video/real-sit-on-box.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SITTING</span><h4>Sit on a box</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-platform-poster.jpg" aria-label="Unitree G1 climbing onto an outdoor platform"><source src="assets/video/real-climb-platform.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>SUPPORT TRANSITION</span><h4>Climb a platform</h4><p>Step onto a raised platform outdoors.</p></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-step-up-outdoor-poster.jpg" aria-label="Step up outdoors"><source src="assets/video/real-step-up-outdoor.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>CLIMBING</span><h4>Step up outdoors</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-ramp-poster.jpg" aria-label="Climb a ramp"><source src="assets/video/real-climb-ramp.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>CLIMBING</span><h4>Climb a ramp</h4></div></article>
+<article class="demo-feature"><div class="demo-media"><video class="demo-video" controls muted loop playsinline preload="none" poster="assets/video/real-climb-ramp-outdoor-poster.jpg" aria-label="Climb an outdoor ramp"><source src="assets/video/real-climb-ramp-outdoor.mp4" type="video/mp4"></video></div><div class="demo-copy"><span>CLIMBING</span><h4>Climb an outdoor ramp</h4></div></article>
         </div>
       </div>
     </section>
