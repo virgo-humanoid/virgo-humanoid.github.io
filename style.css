@@ -32,14 +32,14 @@
 @media(max-width:720px){.hero-paper-title{font-size:19px;margin:-14px 0 22px}.section-intro{font-size:15px}.film-section .section-heading{margin-bottom:32px}.video-caption{flex-direction:column;font-size:10px}.clip-heading{display:block;margin-top:42px}.clip-heading p{margin-top:8px}.clip-grid{gap:10px}.clip-card div{padding:11px}.clip-card h4{font-size:16px}.result-grid{grid-template-columns:1fr}.result-card{padding:20px}.result-card strong{font-size:52px;margin:7px 0}.result-card p{font-size:13px}}
 
 /* Split hero with the teaser on the right */
-.hero-grid{grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);min-height:0;gap:clamp(32px,4vw,62px);align-items:center;padding:70px 0 82px}
+.hero-grid{grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);min-height:0;gap:34px;align-items:center;padding:70px 0 82px}
 .hero-copy{max-width:none}
-.hero h1{font-size:clamp(56px,4.6vw,76px);line-height:.98;letter-spacing:-.07em;max-width:680px;margin:0 0 20px}
+.hero h1{font-size:clamp(52px,4.25vw,72px);line-height:.98;letter-spacing:-.07em;max-width:680px;margin:0 0 20px}
 .hero-paper-title{font-size:clamp(18px,1.7vw,22px);max-width:680px;margin:0 0 23px}
-.hero-visual{width:100%;max-width:none;transform:rotate(-1deg);border-radius:18px}
+.hero-visual{width:calc(100% + 24px);max-width:none;transform:rotate(-1deg);border-radius:18px}
 .hero-visual img{display:block;width:100%;height:auto;aspect-ratio:2200/678;object-fit:contain}
 .hero .eyebrow{margin-bottom:20px}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px;padding:54px 0 64px}.hero-visual{max-width:720px;margin-inline:auto}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px;padding:54px 0 64px}.hero-visual{width:100%;max-width:720px;margin-inline:auto}}
 @media(max-width:720px){.hero-grid{gap:28px;padding:48px 0 58px}.hero h1{font-size:clamp(48px,11.4vw,68px);margin-bottom:22px}.hero-paper-title{font-size:18px;margin:0 0 22px}.hero-visual{transform:none}.hero-visual img{height:auto;aspect-ratio:2200/678;object-fit:contain}.footer-bottom span:nth-child(2){display:inline}}
 
 /* Paper authors and affiliations */
