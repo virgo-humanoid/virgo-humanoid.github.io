@@ -106,3 +106,15 @@ html{scroll-behavior:auto;scroll-padding-top:76px}
 .overview-teaser figcaption{max-width:1050px;margin:18px auto 0;color:#596071;font-size:15px;line-height:1.65}
 .real-world-section .demo-list-heading{margin-top:18px}
 .real-world-section .demo-list-heading h2{font-family:var(--display);font-size:clamp(42px,5vw,70px);font-weight:600;letter-spacing:-.055em;line-height:1.1;margin:0}
+
+/* Compact, consistent galleries for individual demonstrations. */
+.real-demo-stack,.sim-demo-stack{display:grid;align-items:start;gap:28px 24px}
+.real-demo-stack{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sim-demo-stack{grid-template-columns:repeat(3,minmax(0,1fr))}
+.real-demo-stack .demo-feature,.sim-demo-stack .demo-feature{min-width:0;margin:0;padding:0;border:0;gap:8px}
+.real-demo-stack .demo-copy,.sim-demo-stack .demo-copy{padding:0 2px 8px}
+.real-demo-stack .demo-copy h4{font-size:clamp(23px,2.5vw,34px)}
+.sim-demo-stack .demo-copy h4{font-size:clamp(18px,1.9vw,27px)}
+.sim-demo-stack .demo-copy span{font-size:10px}
+@media(max-width:1000px){.sim-demo-stack{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.real-demo-stack,.sim-demo-stack{grid-template-columns:1fr;gap:26px}.real-demo-stack .demo-copy h4,.sim-demo-stack .demo-copy h4{font-size:26px}}
